@@ -7,5 +7,8 @@ RUN pip install jupyter jupyter_kernel_gateway
 EXPOSE 9000
 
 # Iniciar Jupyter Kernel Gateway
-CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9000", "--KernelGatewayApp.allow_origin='*'", "--KernelGatewayApp.allow_credentials=True"]
-
+CMD ["jupyter", "kernelgateway", 
+     "--KernelGatewayApp.ip=0.0.0.0", 
+     "--KernelGatewayApp.port=9000",
+     "--KernelGatewayApp.allow_origin='*'", 
+     "--KernelGatewayApp.allow_credentials=True"]
